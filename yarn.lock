@@ -5105,7 +5105,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@openmrs/esm-patient-attachments-app@workspace:packages/esm-patient-attachments-app":
+"@openmrs/esm-patient-attachments-app@workspace:*, @openmrs/esm-patient-attachments-app@workspace:packages/esm-patient-attachments-app":
   version: 0.0.0-use.local
   resolution: "@openmrs/esm-patient-attachments-app@workspace:packages/esm-patient-attachments-app"
   dependencies:
@@ -5396,11 +5396,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@openmrs/esm-patient-notes-app@workspace:packages/esm-patient-notes-app"
   dependencies:
+    "@openmrs/esm-patient-attachments-app": "workspace:*"
     "@openmrs/esm-patient-common-lib": "workspace:*"
     lodash-es: ^4.17.21
     webpack: ^5.88.2
   peerDependencies:
     "@openmrs/esm-framework": 5.x
+    "@openmrs/esm-patient-attachments-app": 5.x
     "@openmrs/esm-patient-common-lib": 5.x
     dayjs: 1.x
     react: 18.x

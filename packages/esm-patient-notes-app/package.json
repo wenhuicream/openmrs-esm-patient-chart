@@ -42,6 +42,7 @@
   },
   "peerDependencies": {
     "@openmrs/esm-framework": "5.x",
+    "@openmrs/esm-patient-attachments-app": "5.x",
     "@openmrs/esm-patient-common-lib": "5.x",
     "dayjs": "1.x",
     "react": "18.x",
@@ -51,6 +52,7 @@
     "swr": "2.x"
   },
   "devDependencies": {
+    "@openmrs/esm-patient-attachments-app": "workspace:*",
     "@openmrs/esm-patient-common-lib": "workspace:*",
     "webpack": "^5.88.2"
   }
